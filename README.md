@@ -2,26 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Get The Repository
+To download this repository, navigate to a folder of your choice in a command-line interface, then type `git clone https://github.com/abaza738/realsoft-angular`.  
+The command will create a new folder called `realsoft-angular`. You can open the folder in Visual Studio Code.
 
-## Code scaffolding
+### Download The Dependencies
+In the command-line interface, navigate to the project folder, and type `npm install` *(or `npm i` for short)* to install all the dependencies.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Start It Up!
+Type `ng serve` to start the development server!
 
-## Build
+## Start Coding
+You are now ready to start working!  
+Refer to the **[Instructions](./wiki/Instructions.md)** for further details.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Support
+Still not understanding? Facing a problem? Contact me directly via Microsoft Teams or [Email](maher.abaza@realsoft-me.com).

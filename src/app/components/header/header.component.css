@@ -1,0 +1,10 @@
+nav {
+    padding: 2rem 2rem;
+    background-color: var(--primary);
+    color: white;
+    font-size: x-large;
+}
+
+nav #name {
+    text-align: right;
+}

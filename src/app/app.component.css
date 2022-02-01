@@ -1,0 +1,14 @@
+.container {
+    height: 100%;
+}
+
+#form-section {
+    max-width: 25%;
+    background-color: #c0c0c0;
+    padding: 1rem;
+}
+
+#list-section {
+    background-color: #d5d5d5;
+    padding: 1rem;
+}

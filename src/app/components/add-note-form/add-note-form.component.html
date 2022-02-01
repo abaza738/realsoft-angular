@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col">
+        
+        <h3>Add A New Note</h3>
+        
+        <form [formGroup]="addNoteForm" (ngSubmit)="onSubmit()" id="note-form">
+
+            <div class="col form-control">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" formControlName="title">
+            </div>
+
+            <div class="col form-control">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" formControlName="description">
+            </div>
+
+            <div class="col form-control">
+                <label for="type">Type</label>
+                <label>
+                    <input type="radio" name="type" id="type" [value]="1" formControlName="type"> Personal
+                </label>
+                <label>
+                    <input type="radio" name="type" id="type" [value]="2" formControlName="type"> Family
+                </label>
+                <label>
+                    <input type="radio" name="type" id="type" [value]="3" formControlName="type"> Work
+                </label>
+            </div>
+
+            <div class="col form-control">
+                <button type="submit">Add Note</button>
+            </div>
+            
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,11 @@
+#notes-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.list-header {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid grey;
+    justify-content: space-between;
+}
