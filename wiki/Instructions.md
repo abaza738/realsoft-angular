@@ -21,8 +21,10 @@ Your first task is using that variable in your [Header Component](../src/app/com
 
 ### 1.2 Where Are My Notes?
 You will also notice that there are no notes in the list. Not good!  
-- Visit the [Notes Service](../src/app/notes.service.ts) again to find the `notes` array. I have you provided you with some default data to begin with.
-- You will need to configure the [Note Component](../src/app/components/note/note.component.ts) to receive data as **input**.
+Your task is to display the notes from the service!
 
-Your task is to display the notes from the service!  
+- Visit the [Notes Service](../src/app/notes.service.ts) again to find the `notes` array. I have you provided you with some default data to begin with.
+- You need to use these notes in the [Notes List Component](../src/app/components/notes-list/notes-list.component.html) to render those notes using the [Note Component](../src/app/components/note/note.component.html).
+- You will need to configure the [Note Component](../src/app/components/note/note.component.html) to receive data as **input**.
+
 *Hint: Use the [Angular Guide For Listing Items](https://angular.io/guide/built-in-directives#listing-items-with-ngfor).*
