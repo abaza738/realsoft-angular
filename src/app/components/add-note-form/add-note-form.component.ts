@@ -5,7 +5,7 @@ import { NotesService } from 'src/app/notes.service';
 @Component({
   selector: 'app-add-note-form',
   templateUrl: './add-note-form.component.html',
-  styleUrls: ['./add-note-form.component.css']
+  styleUrls: ['./add-note-form.component.scss']
 })
 export class AddNoteFormComponent implements OnInit {
 
