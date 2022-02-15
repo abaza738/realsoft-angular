@@ -1,8 +1,14 @@
+.note {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
 .note .dot {
     width: 1.5rem;
     height: 1.5rem;
-    background-color: white;
     border-radius: 2rem;
+    background-color: aqua;
 }
 
 .note .title {
@@ -12,13 +18,10 @@
     align-items: center;
     justify-content: start;
     padding: 1rem;
-    color: white;
-    background-color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .note .description {
     padding: 1rem;
-    background-color: white;
-    border: 3px solid var(--primary);
     flex: 1;
 }

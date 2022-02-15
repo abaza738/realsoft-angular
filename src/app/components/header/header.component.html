@@ -1,8 +1,43 @@
-<nav class="row">
-    <div class="col">RealSoft - Angular Project</div>
-    
-    <div class="col center">Notes Application</div>
-    
-    <!-- Can you add a dynamic name here? -->
-    <div id="name" class="col">Welcome User</div>
-</nav>
+<mat-toolbar>
+
+  <button mat-icon-button color="primary" (click)="snav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <span>RealSoft - Angular Project</span>
+
+  <!-- For Spacing -->
+  <span class="spacer"></span>
+  
+  <span>Notes Application</span>
+  
+  <!-- For Spacing -->
+  <span class="spacer"></span>
+
+  <span style="display: contents;">
+    <i class="fa-regular fa-user"></i> &nbsp; Welcome User!
+  </span>
+
+</mat-toolbar>
+
+<mat-sidenav-container class="example-sidenav-container">
+  <mat-sidenav #snav [mode]="'side'" [opened]="true">
+    <mat-nav-list>
+      <a [routerLink]="'home'">
+        <i [class]="routeIcons['home'].icon"></i>
+        <span>{{ routeIcons['home'].name }}</span>
+      </a>
+
+      <a [routerLink]="'notes'">
+        <i [class]="routeIcons['notes'].icon"></i>
+        <span>{{ routeIcons['notes'].name }}</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="page">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

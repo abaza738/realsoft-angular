@@ -7,7 +7,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { NotesListComponent } from './components/notes-list/notes-list.component';
 import { NoteComponent } from './components/note/note.component';
 import { AddNoteFormComponent } from './components/add-note-form/add-note-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
+import { MaterialModule } from './material/material.module';
+import { WeatherComponent } from './components/weather/weather.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +20,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     NotesListComponent,
     NoteComponent,
-    AddNoteFormComponent
+    AddNoteFormComponent,
+    HomeComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

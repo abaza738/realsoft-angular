@@ -1,77 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
 
 :root {
-    --primary: #121950;
-    --porsonal: rgb(0, 60, 255);
-    --family: rgb(255, 132, 0);
-    --work: rgb(0, 128, 83);
+  --primary: #121950;
+  --porsonal: rgb(0, 60, 255);
+  --family: rgb(255, 132, 0);
+  --work: rgb(0, 128, 83);
 }
 
 * {
-    box-sizing: border-box;
-    font-family: 'Lato';
+  box-sizing: border-box;
+  font-family: "Titillium Web";
 }
 
 html {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 body {
-    margin: 0;
-    height: 100%;
-    color: var(--primary);
+  margin: 0;
+  color: var(--primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-h1,
+.mat-typography h1,
+.mat-h2,
+.mat-typography h2,
+.mat-h3,
+.mat-typography h3,
+.mat-h4,
+.mat-typography h4,
+.mat-h5,
+.mat-typography h5,
+.mat-h6,
+.mat-typography h6 {
+  font-family: "Titillium Web";
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.form-control {
-    margin-bottom: 0.75rem;
+.page {
+  display: flex;
+  flex: 1;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-input[type="text"] {
-    border: none;
-    border-bottom: 3px solid var(--primary);
-    outline: none;
-    padding: 0.5rem 1rem;
+.page > * {
+  flex: 1;
+}
+
+.page router-outlet {
+  flex: none !important;
+}
+
+.fa, .fa-solid, .fa-brand, .fa-regular {
+    text-align: center;
     font-size: 1.2rem;
-    border-top-right-radius: 0.3rem;
-    border-top-left-radius: 0.3rem;
-}
-
-button, input[type="button"], input[type="submit"] {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    font-size: 1.1rem;
-    color: white;
-    background-color: var(--primary);
-    padding: 0.5rem 1rem;
-    border-radius: 0.3rem;
+    line-height: 1.5;
 }
 
 .personal {
-    background-color: var(--porsonal);
+  background-color: var(--porsonal);
 }
 
 .family {
-    background-color: var(--family);
+  background-color: var(--family);
 }
 
 .work {
-    background-color: var(--work);
+  background-color: var(--work);
 }

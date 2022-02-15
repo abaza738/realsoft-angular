@@ -1,0 +1,36 @@
+.home {
+    flex-direction: column;
+    padding: 50px;
+    height: 100%;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.img {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.img img {
+    width: 100%;
+}
+
+.img img.realsoft {
+    filter: hue-rotate(180deg) invert(100%);
+}
+
+.mat-raised-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+}

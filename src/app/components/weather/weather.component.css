@@ -1,0 +1,70 @@
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
+.search .fields {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.search .fields .error {
+    text-transform: capitalize;
+    color: rgb(255, 51, 51);
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 2rem;
+    margin: 2rem 0;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.results .header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: start;
+}
+
+.results .header .icon {
+    width: 10rem;
+}
+
+.results .header .icon img {
+    width: 100%;
+    filter: drop-shadow(0 0 1rem rgba(0,0,0,0.25));
+}
+
+.results .header .title .temp {
+    font-size: 3rem;
+}
+
+.results .header .title .state {
+    text-transform: capitalize;
+}
+
+.results .header .title .city {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.results .body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.results .body .item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.results .body .item i {
+    text-align: center;
+    width: 2rem;
+}

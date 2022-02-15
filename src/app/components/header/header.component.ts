@@ -7,7 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  routeIcons: any = {
+    "home": {
+      icon: "fa-solid fa-house",
+      name: "Home"
+    },
+    "notes": {
+      icon: "fa-solid fa-note-sticky",
+      name: "Notes"
+    },
+    "weather": {
+      icon: "fa-solid fa-cloud-sun",
+      name: "Weather"
+    }
+  }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

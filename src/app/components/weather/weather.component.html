@@ -1,0 +1,47 @@
+<h1>Weather</h1>
+
+<div class="search">
+    <div class="fields">
+        <div>
+            <mat-form-field color="accent">
+                <mat-label>City</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            <p class="error" *ngIf="error">
+                {{ error }}
+            </p>
+        </div>
+
+        <button mat-raised-button color="accent">
+            <i class="fa-solid fa-search"></i>
+        </button>
+    </div>
+
+    <div>
+        
+    </div>
+</div>
+
+<div class="results" *ngIf="currentWeather">
+    <div class="header">
+        <div class="icon">
+            <img [src]="'http://openweathermap.org/img/wn/'+ currentWeather.weather[0].icon +'@4x.png'" alt="">
+        </div>
+        <div class="title">
+            <h1 class="temp">{{ currentWeather.main.temp | number: '1.0-0' }}° C</h1>
+            <h2 class="state">{{ currentWeather.weather[0].description }}</h2>
+            <h4 class="city">{{ currentWeather.name }}, {{ currentWeather.sys.country }}</h4>
+        </div>
+    </div>
+    <div class="body">
+        <div class="item">
+            <i class="fa-solid fa-temperature-low"></i> <span>Low {{ currentWeather.main.temp_min | number: '1.0-0' }}° C</span>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-temperature-high"></i> <span>High {{ currentWeather.main.temp_max | number: '1.0-0' }}° C</span>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-water"></i> <span>{{ currentWeather.main.humidity }}%</span>
+        </div>
+    </div>
+</div>
