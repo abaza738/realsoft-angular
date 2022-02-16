@@ -1,8 +1,11 @@
 <div class="col note">
     <div class="title">
         <div class="dot"></div>
-        Title
+        {{ c.title }}
     </div>
-    <div class="description" [innerHTML]="'<p>Description</p>'">
+    <div class="description" [innerHTML]="c.description">
     </div>
+    <button mat-raised-button color="primary" (click)="onClick(c.type)">
+        Click Me!
+    </button>
 </div>

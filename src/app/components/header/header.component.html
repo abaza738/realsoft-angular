@@ -1,6 +1,6 @@
 <mat-toolbar>
 
-  <button mat-icon-button color="primary" (click)="snav.toggle()">
+  <button mat-icon-button color="primary" (click)="snav.toggle()" [disabled]="loggedIn">
     <mat-icon>menu</mat-icon>
   </button>
 
@@ -14,8 +14,10 @@
   <!-- For Spacing -->
   <span class="spacer"></span>
 
-  <span style="display: contents;">
-    <i class="fa-regular fa-user"></i> &nbsp; Welcome User!
+  <input matInput type="text" [(ngModel)]="currentUserName">
+
+  <span *ngIf="loggedIn" style="display: contents;">
+    <i class="fa-regular fa-user"></i> &nbsp; Welcome {{ currentUserName }}!
   </span>
 
 </mat-toolbar>

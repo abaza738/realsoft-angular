@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class NotesService {
 
   // Insert your name here!
-  name: string = "";
+  name: string = "Maher";
 
   // These are some notes for you, use them well :)
   notes: any[] = [

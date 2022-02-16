@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NotesService } from 'src/app/notes.service';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  loggedIn: boolean = true;
+  currentUserName: string = this.notesService.name;
 
   routeIcons: any = {
     "home": {
@@ -22,7 +26,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  constructor() {
+  constructor(public notesService: NotesService) {
   }
 
   ngOnInit(): void {

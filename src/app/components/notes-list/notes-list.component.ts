@@ -16,4 +16,8 @@ export class NotesListComponent implements OnInit {
     this.notes = this.service.notes;
   }
 
+  alert(event: any) {
+    window.alert(event);
+  }
+
 }

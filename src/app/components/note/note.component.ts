@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-note',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoteComponent implements OnInit {
 
+  @Input('note') c: any;
+  @Output() nameChange = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick(value: any) {
+    this.nameChange.emit(value);
   }
 
 }

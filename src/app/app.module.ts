@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MaterialModule } from './material/material.module';
 import { WeatherComponent } from './components/weather/weather.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     NoteComponent,
     AddNoteFormComponent,
     HomeComponent,
-    WeatherComponent
+    WeatherComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
